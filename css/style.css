@@ -155,9 +155,9 @@ img {
   font-weight: bold;
   font-size:28px;
   padding:8px 12px;
-  border:solid 2px var(-green);
-  color:var(-green);
-  background:var(-black-transparent);
+  border:solid 2px var(--green);
+  color:var(--green);
+  background:var(--black-transparent);
   position:absolute;
   top:24px;
   right:12px;
