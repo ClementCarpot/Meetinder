@@ -23,11 +23,14 @@ body {
   font-family: 'Poppins', sans-serif;
   width: 100%;
   height:100vh;
-  display: flex;
-  justify-content: center;
+  display: flex;  
   overflow: hidden;
+  justify-content: center;
   padding-top: 42px;
+  background: radial-gradient( pink, white);
 }
+
+
 
 main {
   width: 300px;
@@ -71,14 +74,14 @@ img {
   height:100%;
 }
 
-.profile__image {
+.profile_image {
   height: 0;
   padding-bottom:150%;
   background-size: cover;
   background-position: center center;
 }
 
-.profile__infos {
+.profile_infos {
   padding:12px;
   position:absolute;
   bottom:0px;
@@ -86,18 +89,18 @@ img {
   width: 100%;
 }
 
-.profile__name {
+.profile_name {
   color:white;
   font-weight: bold;
   font-size:22px;
 }
 
-.profile__age {
+.profile_age {
   color:var(--light-grey);
   font-weight: normal;
 }
 
-.profile__description {
+.profile_description {
   color:white;
   font-size:13px;
 }
@@ -111,7 +114,7 @@ img {
   gap:24px;
 }
 
-.bottombar__button {
+.right_bottombar_button, .left_bottombar_button  {
   width: 64px;
   height: 64px;
   border-radius:100%;
@@ -121,9 +124,16 @@ img {
   transition:.4s;
 }
 
-.bottombar__button:hover {
+.left_bottombar_button:hover {
   cursor:pointer;
   opacity:0.8;
+  background-color: red;
+}
+
+.right_bottombar_button:hover {
+  cursor:pointer;
+  opacity:0.8;
+  background-color: green;
 }
 
 .profile--match {
@@ -145,9 +155,9 @@ img {
   font-weight: bold;
   font-size:28px;
   padding:8px 12px;
-  border:solid 2px var(--green);
-  color:var(--green);
-  background:var(--black-transparent);
+  border:solid 2px var(-green);
+  color:var(-green);
+  background:var(-black-transparent);
   position:absolute;
   top:24px;
   right:12px;
